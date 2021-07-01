@@ -6,7 +6,7 @@
     <input type="hidden" name="user_id" value="{{auth()->user()->id}}">
     <div class="panel panel-flat">
         <div class="panel-heading">
-            <h5 class="panel-title">Edit Data Dokumen</h5>
+            <h5 class="panel-title">Edit Data Dokumenn</h5>
             <div class="heading-elements">
                 <ul class="icons-list">
                     <li><a data-action="collapse"></a></li>
