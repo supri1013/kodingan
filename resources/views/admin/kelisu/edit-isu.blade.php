@@ -37,6 +37,7 @@
                             <div class="form-group {{$errors->has('kluster_id') ? ' has-error' : ''}}">
                                 <label>Kluster</label>
                                 <select name="kluster_id" id="" class="form-control">
+                                    <option></option>
                                     @foreach ($data_kluster as $kluster)
                                     <option value="{{$kluster->id}}">{{$kluster->nama_kluster}}</option>
                                     @endforeach

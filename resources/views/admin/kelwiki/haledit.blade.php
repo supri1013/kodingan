@@ -53,7 +53,7 @@
 
             <div class="form-group {{$errors->has('gambar') ? ' has-error' : ''}}">
                 <label>File:</label>
-                <div class="uploader"><input type="file" class="file-styled" name="gambar"><span class="filename">File Anda</span><span class="action btn bg-pink-400" style="user-select: none;">Choose File</span></div>
+                <input type="file" name="gambar" class="form-control">
                 <span class="help-block">Format: png,jpg.</span>
                 @if ($errors->has('gambar'))
                 <span class="help-block">{{$errors->first('gambar')}}</span>
@@ -70,10 +70,6 @@
 @push('detail')
 <script type="text/javascript" src="{{asset('assets/js/plugins/editors/summernote/summernote.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/plugins/forms/styling/uniform.min.js')}}"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ddd5173f9ee3701624a8b2869c7a8bcc3ea5574
 <script type="text/javascript" src="{{asset('assets/js/pages/editor_summernote.js')}}"></script>
 @endpush
 @endsection

@@ -24,7 +24,7 @@
                 <th>Pic Piket</th>
                 <th>Pelapor</th>
                 <th>Permasalahan</th>
-                <th>Kluster</th>
+                <th>Bagian Bermasalah</th>
                 <th>Penyelesaian</th>
                 <th class="text-center">Aksi</th>
             </tr>
@@ -37,7 +37,7 @@
                 <td>{{$isu->user->name}}</td>
                 <td>{{$isu->pelapor}}</td>
                 <td>{{$isu->nama_permasalahan}}</td>
-                <td>{{$isu->kluster->nama_kluster}}</td>
+                <td>{{$isu->namaob_rusak}}</td>
                 <td>{{$isu->penyelesaian}}</td>
                 <td>
                     <ul class="icons-list">

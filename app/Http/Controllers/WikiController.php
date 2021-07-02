@@ -263,7 +263,7 @@ class WikiController extends Controller
             'judul' => 'required',
             'deskripsi' => 'required',
             'isi_artikel' => 'required',
-            'gambar' => 'required|mimes:png,jpg',
+            'gambar' => 'mimes:png,jpg',
             'editor' => 'required',
             'sumber' => 'required',
         ]);

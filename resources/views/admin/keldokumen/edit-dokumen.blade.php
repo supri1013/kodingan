@@ -227,7 +227,7 @@
                         </div>
                         <div class="form-group {{$errors->has('file') ? ' has-error' : ''}}">
                             <label>File:</label>
-                            <div class="uploader"><input type="file" class="file-styled" name="file"><span class="filename" style="user-select: none;">Tidak Ada File</span><span class="action btn bg-pink-400" style="user-select: none;">Choose File</span></div>
+                            <input type="file" class="form-control" name="file">
                             <span class="help-block">Format: pdf.</span>
                             @if ($errors->has('file'))
                             <span class="help-block">{{$errors->first('file')}}</span>

@@ -20,7 +20,7 @@
             <tr>
                 <th>Id</th>
                 <th>Judul Dokumen</th>
-                <th>Abstrak</th>
+                <th>Kategori</th>
                 <th>Penulis</th>
                 <th>Kata Kunci</th>
                 <th class="text-center">Actions</th>
@@ -32,7 +32,7 @@
             <tr>
                 <td>{{$dokumen->id}}</td>
                 <td>{{$dokumen->judul_umum}}</td>
-                <td>{{$dokumen->abstrak}}</td>
+                <td>{{$dokumen->kategori->nama}}</td>
                 <td>{{$dokumen->penulis}}</td>
                 <td>{{$dokumen->kata_kunci}}</td>
                 <td>

@@ -61,7 +61,7 @@
         var isu_id = $(this).attr('faq-id');
         swal({
                 title: "Yakin?",
-                text: "Mau dihapus data komentar ini ??",
+                text: "Mau dihapus data faq ini ??",
                 icon: "warning",
                 buttons: true,
                 dangerMode: true,
