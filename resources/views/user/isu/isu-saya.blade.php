@@ -5,9 +5,11 @@
     <div class="panel-heading">
         <h5 class="panel-title">Isu Saya</h5>
         <div class="heading-elements">
-            <div class="heading-elements">
-                <a href="{{route('isu.lapor')}}" class="btn btn-primary btn-sm">Tambah Isu</a>
-            </div>
+            <ul class="icons-list">
+              <li><a data-action="collapse"></a></li>
+              <li><a data-action="reload"></a></li>
+              <li><a data-action="close"></a></li>
+            </ul>
         </div>
     </div>
     @if (session('sukses'))
@@ -16,7 +18,9 @@
         {{session('sukses')}}
     </div> 
     @endif
-
+    <div class="panel-body">
+        <a href="{{route('isu.lapor')}}" class="btn btn-primary btn-sm">Tambah Isu</a>
+    </div>
 <table class="table datatable-basic">
     <thead>
         <tr>

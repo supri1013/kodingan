@@ -6,7 +6,11 @@
     <div class="panel-heading">
         <h5 class="panel-title">DATA KATEGORI DOKUMEN</h5>
         <div class="heading-elements">
-            <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-tambah-forumdiskusi"><i class="icon-plus3 position-left"></i> Tambah </button>
+            <ul class="icons-list">
+                <li><a data-action="collapse"></a></li>
+                <li><a data-action="reload"></a></li>
+                <li><a data-action="close"></a></li>
+              </ul>
         </div>
     </div>
     @if (session('sukses'))
@@ -15,6 +19,9 @@
         {{session('sukses')}}
     </div> 
     @endif
+    <div class="panel-body">
+        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#modal-tambah-forumdiskusi"><i class="icon-plus3 position-left"></i> Tambah </button>
+    </div>
     <table class="table datatable-basic">
         <thead>
             <tr>
@@ -77,9 +84,9 @@
 
 @push('detail')
   <!-- Theme JS files -->
-	<script type="text/javascript" src="asset/js/plugins/tables/datatables/datatables.min.js"></script>
-	<script type="text/javascript" src="asset/js/plugins/forms/selects/select2.min.js"></script>
-	<script type="text/javascript" src="asset/js/pages/datatables_basic.js"></script>
+  <script type="text/javascript" src="{{asset('asset/js/plugins/tables/datatables/datatables.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('asset/js/plugins/forms/selects/select2.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('asset/js/pages/datatables_basic.js')}}"></script>
 	<!-- /theme JS files -->
 @endpush
 

@@ -21,7 +21,7 @@ class ForumdiskusiController extends Controller
             $data_list = Forumdiskusi::where("judul","LIKE","%$cari%")->get();
         }
 
-        $data_forum = Forumdiskusi::latest()->get()->random(5);
+        $data_forum = Forumdiskusi::latest()->get()->random(3);
 
         $jenis = Jenis::all();
 

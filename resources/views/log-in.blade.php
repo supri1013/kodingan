@@ -80,7 +80,7 @@
                         <div class="row">
                           <div class="col-sm-6">
                             <label class="checkbox-inline">
-                              <input type="checkbox" class="styled border-teal" checked="checked">
+                              <input type="checkbox" class="styled border-teal" >
                               Remember
                             </label>
                           </div>
@@ -90,17 +90,16 @@
 					<div class="row">
 						<div class="col-md-6">
 							<div class="form-group">
+								<button type="submit" class="btn bg-primary btn-block btn-sm">Masuk</button>
+							  </div>
+						</div>	
+						<div class="col-md-6">
+							<div class="form-group">
 								<div class="form-group">
 									<a href="/" class="btn bg-danger btn-block btn-sm">Kembali</a>
 								  </div>
 							  </div>
 						</div>
-
-						<div class="col-md-6">
-							<div class="form-group">
-								<button type="submit" class="btn bg-primary btn-block btn-sm">Masuk</button>
-							  </div>
-						</div>	
 					</div>
 
                     </div>

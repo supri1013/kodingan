@@ -2,14 +2,15 @@
 @section('tittle',"Wiki")
 @section('conten')
 
+
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-lg-9">
         @if (session('sukses'))
-    <div class="alert alert-info alert-bordered alert-rounded">
+        <div class="alert alert-info alert-bordered alert-rounded">
         <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
         {{session('sukses')}}
-    </div> 
-    @endif
+        </div> 
+        @endif
         @foreach ($data_newwiki as $wiki)
         <div class="panel panel-flat blog-horizontal blog-horizontal-1">
             <div class="panel-heading">
@@ -42,105 +43,58 @@
                         <a href="{{ route('wiki.baca', $wiki->id) }}" class="heading-text pull-right"><span class="label label-success">Lihat</span></a>
                         <a href="/wiki/{{$wiki->id}}/edit" class="heading-text pull-right"><span class="label label-warning">Edit</span> </a>
                 </div>
+                
             </div>
         </div>
         @endforeach
-
     </div>
-    <div class="col-md-3">
-        <div class="sidebar-detached">
-            <div class="sidebar sidebar-default sidebar-separate">
-                <div class="sidebar-content">
 
-                    <!-- Sidebar search -->
-                    <div class="sidebar-category">
-                        <div class="category-title">
-                            <span>Cari</span>
-                            <ul class="icons-list">
-                                <li><a href="#" data-action="collapse" class=""></a></li>
-                            </ul>
-                        </div>
+    <div class="col-lg-3">
 
-                        <div class="category-content" style="display: block;">
-                            <form action="{{route('wiki')}}" method="GET">
-                                <div class="has-feedback has-feedback-left">
-                                    <input type="text" class="form-control" name="cari" placeholder="By Judul" value="{{Request::get('cari')}}">
-                                    <div class="form-control-feedback">
-                                        <i class="icon-search4 text-size-base text-muted"></i>
-                                    </div>
-                                </div>
-                            </form>
+
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">Pencarian<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+            </div>
+
+            <div class="panel-body">
+                <form action="{{route('wiki')}}" method="GET">
+                    <div class="input-group content-group">
+                            <input type="text" class="form-control input-lg" name="cari" placeholder="By Judul Artikel" value="{{Request::get('cari')}}">
+
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-lg btn-icon"><i class="icon-search4"></i></button>
                         </div>
                     </div>
-                    <!-- /sidebar search -->
+                </form>
+            </div>
+        </div>
 
-
-                    <!-- Categories -->
-                    {{-- <div class="sidebar-category">
-                        <div class="category-title">
-                            <span>Categories</span>
-                            <ul class="icons-list">
-                                <li><a href="#" data-action="collapse"></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="category-content no-padding">
-                            <ul class="navigation">
-                                @foreach ($jenis as $item)
-                                <li>
-                                    <a href="{{route('jenis', $item->id)}}">
-                                        <span class="text-muted text-size-small text-regular pull-right">12</span>
-                                        <i class="icon-wordpress"></i>
-                                        {{$item->nama}}
-                                    </a>
-                                </li>  
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div> --}}
-                    <!-- /categories -->
-
-                   
-                   <!-- Recent comments -->
-                    <div class="sidebar-category">
-                        <div class="category-title">
-                            <span>Artikel Terbaru</span>
-                            <ul class="icons-list">
-                                <li><a href="#" data-action="collapse" class=""></a></li>
-                            </ul>
-                        </div>
-                        @foreach ($data_wiki as $item)
-                        <div class="category-content" style="display: block;">
-                            <ul class="media-list">
-                                <li class="media">
-                                    <div class="media-left">
-                                        <img src="{{$item->user->getGambar()}}" class="img-circle img-sm" alt="">
-                                    </div>
-
-                                    <div class="media-body">
-                                        <a href="{{ route('wiki.baca', $item->id) }}" class="media-heading">
-                                            <span class="text-semibold">{{$item->user->name}}</span>
-                                        </a>
-
-                                        <span class="text-muted">{{$item->judul}}</span>
-                                        <ul class="list-inline list-inline-separate">
-                                            <li>{{$item->getCreatedAtAttribute()}}</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        @endforeach
-                        
-                    </div>
-                    <!-- /recent comments -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">Artikel Terbaru<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+                <div class="heading-elements">
+                    <a href="/wiki" class="heading-text">See all →</a>
                 </div>
             </div>
-        </div>       
+
+            <div class="panel-body">
+                <ul class="media-list">
+                    @foreach ($data_wiki as $item)
+                    <li class="media">
+                        <div class="media-left"><a href="{{ route('wiki.baca', $item->id) }}" class="btn border-primary text-primary btn-flat btn-icon btn-rounded btn-sm"><i class="icon-spinner11"></i></a></div>
+                        <div class="media-body">
+                            <a href="#">{{$item->user->name}}</a>
+                            <div class="media-annotation">{{$item->getCreatedAtAttribute()}}</div>
+                        </div>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+
     </div>
 </div>
-
-
 
 @endsection
 

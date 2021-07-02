@@ -2,11 +2,11 @@
 @section('tittle',"Daftar Forum")  
 @section('conten')
 
-
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-lg-9">
+
         @foreach ($data_list as $item)
-        <!-- Blog layout #1 with image -->
+
         <div class="panel panel-flat">
             <div class="panel-body">
                 <div class="content-group">
@@ -35,76 +35,58 @@
                 </div>
             </div>
         </div>
-        <!-- /blog layout #1 with image -->
+
         @endforeach
 
+
     </div>
-    <div class="col-md-3">
-        <div class="sidebar-detached">
-            <div class="sidebar sidebar-default sidebar-separate">
-                <div class="sidebar-content">
 
-                    <!-- Sidebar search -->
-                    <div class="sidebar-category">
-                        <div class="category-title">
-                            <span>Cari</span>
-                            <ul class="icons-list">
-                                <li><a href="#" data-action="collapse" class=""></a></li>
-                            </ul>
-                        </div>
+    <div class="col-lg-3">
 
-                        <div class="category-content" style="display: block;">
-                            <form action="{{route('list')}}" method="GET">
-                                <div class="has-feedback has-feedback-left">
-                                    <input type="text" class="form-control" name="cari" placeholder="By Topik" value="{{Request::get('cari')}}">
-                                    <div class="form-control-feedback">
-                                        <i class="icon-search4 text-size-base text-muted"></i>
-                                    </div>
-                                </div>
-                            </form>
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">Pencarian<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+            </div>
+
+            <div class="panel-body">
+                
+                <form action="{{route('list')}}" method="GET">
+                    <div class="input-group content-group">
+                            <input type="text" class="form-control input-lg" name="cari" placeholder="By Topik Diskusi" value="{{Request::get('cari')}}">
+
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-lg btn-icon"><i class="icon-search4"></i></button>
                         </div>
                     </div>
-                    <!-- /sidebar search -->
+                </form>
+            </div>
+        </div>
 
-                   
-                   <!-- Recent comments -->
-                    <div class="sidebar-category">
-                        <div class="category-title">
-                            <span>Forum Terbaru</span>
-                            <ul class="icons-list">
-                                <li><a href="#" data-action="collapse" class=""></a></li>
-                            </ul>
-                        </div>
-                        @foreach ($data_forum as $item)
-                        <div class="category-content" style="display: block;">
-                            <ul class="media-list">
-                                <li class="media">
-                                    <div class="media-left">
-                                        <img src="{{$item->user->getGambar()}}" class="img-circle img-sm" alt="">
-                                    </div>
-
-                                    <div class="media-body">
-                                        <a href="/forumdiskusi/{{$item->id}}/lihatdiskusi" class="media-heading">
-                                            <span class="text-semibold">{{$item->user->name}}</span>
-                                        </a>
-                                        <span class="text-muted">{{$item->judul}}</span>
-                                        <ul class="list-inline list-inline-separate">
-                                            <li>{{$item->getCreatedAtAttribute()}}</li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        @endforeach
-                        
-                    </div>
-                    <!-- /recent comments -->
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">Forum Terbaru<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+                <div class="heading-elements">
+                    <a href="/forum" class="heading-text">See all →</a>
                 </div>
             </div>
-        </div>       
+
+            <div class="panel-body">
+                <ul class="media-list">
+                    @foreach ($data_forum as $item)
+                    <li class="media">
+                        <div class="media-left"><a href="#" class="btn border-primary text-primary btn-flat btn-icon btn-rounded btn-sm"><i class="icon-spinner11"></i></a></div>
+                        <div class="media-body">
+                            <a href="/forumdiskusi/{{$item->id}}/lihatdiskusi">{{$item->user->name}}</a> {{$item->judul}}
+                            <div class="media-annotation">{{$item->getCreatedAtAttribute()}}</div>
+                        </div>
+                    </li>
+                    @endforeach
+                </ul>
+            </div>
+        </div>
+        <!-- /latest updates -->
+
     </div>
 </div>
-
-
 
 @endsection

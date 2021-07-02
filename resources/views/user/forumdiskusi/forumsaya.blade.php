@@ -5,9 +5,11 @@
     <div class="panel-heading">
         <h5 class="panel-title">Forum Diskusi Saya</h5>
         <div class="heading-elements">
-            <div class="heading-elements">
-                <a href="{{route('tambah.forum')}}" class="btn btn-primary btn-sm">Tambah Forum Diskusi</a>
-            </div>
+            <ul class="icons-list">
+              <li><a data-action="collapse"></a></li>
+              <li><a data-action="reload"></a></li>
+              <li><a data-action="close"></a></li>
+            </ul>
         </div>
     </div>
     @if (session('sukses'))
@@ -16,6 +18,9 @@
         {{session('sukses')}}
     </div> 
     @endif
+    <div class="panel-body">
+        <a href="{{route('tambah.forum')}}" class="btn btn-primary btn-sm">Tambah Forum Diskusi</a>
+    </div>
 
 <table class="table datatable-basic">
     <thead>

@@ -16,7 +16,7 @@
             </h3>
 
             <ul class="list-inline list-inline-separate text-muted content-group">
-                <li>By <a href="#" class="text-muted">Eugene</a></li>
+                <li>By <a href="#" class="text-muted"></a></li>
                 <li>{{$newwiki->created_at}}</li>
             </ul>
 
@@ -28,7 +28,7 @@
                 <li>
                     <h5>Sumber</h5>
                     <i class="icon-earth text-success position-left"></i>
-                    {{$newwiki->sumber}}
+                    <a href="#">{{$newwiki->sumber}}</a> 
                 </li>
             </ul>
 

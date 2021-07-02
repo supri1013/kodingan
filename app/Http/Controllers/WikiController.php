@@ -149,7 +149,7 @@ class WikiController extends Controller
          $data_wiki->judul = $request->input('judul');
          $data_wiki->editor = $request->input('editor');
          $data_wiki->sumber = $request->input('sumber');
-         $data_wiki->gambar = $request->input('gambar');
+      
          $data_wiki->deskripsi = $request->input('deskripsi');
          
          if ($request->hasfile('gambar')) {

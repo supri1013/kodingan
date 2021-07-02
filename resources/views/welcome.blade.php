@@ -60,7 +60,6 @@
                 <li ><a href="#about-section" class="nav-link">Tentang Kami</a></li>
                 <li><a href="#team-section" class="nav-link">Tim</a></li>
                 <li><a href="#contact-section" class="nav-link">Kontak</a></li> 
-                {{-- <li><a href="{{route('login')}}" class="nav-link">Login</a></li>  --}}
               </ul>
             </nav>
           </div>
@@ -92,11 +91,11 @@
         </div>
       </div>
 
-      {{-- <a href="#contact-section" class="mouse smoothscroll">
+      <a href="#contact-section" class="mouse smoothscroll">
         <span class="mouse-icon">
           <span class="mouse-wheel"></span>
         </span>
-      </a> --}}
+      </a>
     </div>  
 
     
@@ -150,8 +149,8 @@
                 <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Kaiara Spencer</h3>
-                <span class="position">Product Manager</span>
+                <h3>Anton Wisnu Prabowo</h3>
+                <span class="position">ASS. DGM SISTEM INFORMASI</span>
               </div>
             </div>
           </div>
@@ -168,8 +167,8 @@
                 <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Dave Simpson</h3>
-                <span class="position">Product Manager</span>
+                <h3>Tika Meirawati</h3>
+                <span class="position">SPV. SISTEM INFORMASI</span>
               </div>
             </div>
           </div>
@@ -186,8 +185,8 @@
                 <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Ben Thompson</h3>
-                <span class="position">Product Manager</span>
+                <h3>Sutrisno</h3>
+                <span class="position">Tno Sistem Informasi</span>
               </div>
             </div>
           </div>
@@ -204,8 +203,8 @@
                 <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Kyla Stewart</h3>
-                <span class="position">Product Manager</span>
+                <h3>Verdian Anumza</h3>
+                <span class="position">Tno Sistem Informasi</span>
               </div>
             </div>
           </div>
@@ -222,8 +221,8 @@
                 <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Kaiara Spencer</h3>
-                <span class="position">Product Manager</span>
+                <h3>Indra Permana</h3>
+                <span class="position">Tno Sistem Informasi</span>
               </div>
             </div>
           </div>
@@ -240,8 +239,8 @@
                 <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Dave Simpson</h3>
-                <span class="position">Product Manager</span>
+                <h3>Dani Apriansyah</h3>
+                <span class="position">Tno Sistem Informasi</span>
               </div>
             </div>
           </div>
@@ -258,31 +257,11 @@
                 <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
-                <h3>Ben Thompson</h3>
-                <span class="position">Product Manager</span>
+                <h3>Machel Alvaldo</h3>
+                <span class="position">Asisten Office</span>
               </div>
             </div>
           </div>
-
-          <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="team-member">
-              <figure>
-                <ul class="social">
-                  <li><a href="#"><span class="icon-facebook"></span></a></li>
-                  <li><a href="#"><span class="icon-twitter"></span></a></li>
-                  <li><a href="#"><span class="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span class="icon-instagram"></span></a></li>
-                </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
-              </figure>
-              <div class="p-3">
-                <h3>Chris Stewart</h3>
-                <span class="position">Product Manager</span>
-              </div>
-            </div>
-          </div>
-
-
           
         </div>
       </div>
@@ -383,7 +362,7 @@
             <div class="row">
               <div class="col-md-5">
                 <h2 class="footer-heading mb-4">About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                <p>PT Pelabuhan Indonesia II (selanjutnya disebut “IPC” dan “Perseroan”) pada awalnya didirikan sebagai Perusahaan Umum (“Perum”) Pelabuhan II berdasarkan Peraturan Pemerintah (“PP”) No. 15 Tahun 1983 juncto PP No. 5 Tahun 1985. Perum Pelabuhan II merupakan Badan Usaha Milik Negara (“BUMN”) yang berada di bawah pembinaan Departemen Perhubungan Republik Indonesia. </p>
               </div>
               <div class="col-md-3 ml-auto">
                 <h2 class="footer-heading mb-4">Quick Links</h2>

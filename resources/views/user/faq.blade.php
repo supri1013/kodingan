@@ -3,7 +3,8 @@
 @section('conten')
 
 <div class="row">
-    <div class="col-md-9">
+    <div class="col-lg-9">
+ 
         @foreach ($data_newfaq as $faq)
         <div class="">
             <div class="panel panel-white">
@@ -20,66 +21,43 @@
             </div>
         </div>
         @endforeach
-                                    
-        {{-- {{$data_newfaq->links()}}    --}}
+
     </div>
-    <div class="col-md-3">
-        <div class="sidebar-detached">
-            <div class="sidebar sidebar-default sidebar-separate">
-                <div class="sidebar-content">
 
-                    <!-- Sidebar search -->
-                    <div class="sidebar-category">
-                        <div class="category-title">
-                            <span>Search</span>
-                            <ul class="icons-list">
-                                <li><a href="#" data-action="collapse"></a></li>
-                            </ul>
-                        </div>
+    <div class="col-lg-3">
 
-                        <div class="category-content">
-                            <form action="{{route('faq')}}" method="GET">
-                                <div class="has-feedback has-feedback-left">
-                                    <input type="text" class="form-control" placeholder="By Pertanyaan" name="cari" value="{{Request::get('cari')}}">
-                                    <div class="form-control-feedback">
-                                        <i class="icon-search4 text-size-base text-muted"></i>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /sidebar search -->
-
-
-                    <!-- Categories -->
-                    <div class="sidebar-category">
-                        <div class="category-title">
-                            <span>Kategori</span>
-                            <ul class="icons-list">
-                                <li><a href="#" data-action="collapse"></a></li>
-                            </ul>
-                        </div>
-
-                        <div class="category-content no-padding">
-                            <ul class="navigation">
-                                @foreach ($jenis as $item)
-                                <li>
-                                    <a href="{{ route('faq.jenis', $item->id) }}" class="text-primary">
-                                        <span class="text-muted text-size-small text-regular pull-right"></span>
-                                        <i class="icon-pushpin"></i>
-                                        {{$item->nama}}
-                                    </a>
-                                </li>  
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /categories -->
-
-                </div>
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">Pencarian<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
             </div>
-        </div>      
+
+            <div class="panel-body">
+                
+                <form action="{{route('faq')}}" method="GET">
+                    <div class="input-group content-group">
+                        
+                        <input type="text" class="form-control input-lg" placeholder="By Pertanyaan" name="cari" value="{{Request::get('cari')}}">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-primary btn-lg btn-icon"><i class="icon-search4"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="panel panel-flat">
+            <div class="panel-heading">
+                <h6 class="panel-title">Kategori<a class="heading-elements-toggle"><i class="icon-more"></i></a></h6>
+            </div>
+        
+            <div class="list-group no-border mb-5">
+                @foreach ($jenis as $item)
+                <a href="{{ route('faq.jenis', $item->id) }}" class="list-group-item"><i class="icon-cog3"></i> {{$item->nama}} <span class="badge badge-danger pull-right">{{App\Newfaq::all()->count()}}</span></a>
+                @endforeach
+            </div>
+        </div>
     </div>
-</div>                          
-                 
+</div>
+
 @endsection
