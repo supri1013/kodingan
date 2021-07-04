@@ -140,7 +140,7 @@
                                     </div>
 
                                     <div class="col-md-4">
-                                        <input type="number" name="halaman" placeholder="halaman" class="form-control">
+                                        <input type="text" name="halaman" placeholder="halaman" class="form-control">
                                     </div>
                                 </div>
                             </div>

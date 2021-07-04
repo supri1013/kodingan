@@ -84,7 +84,7 @@
                     <li class="media">
                         <div class="media-left"><a href="{{ route('wiki.baca', $item->id) }}" class="btn border-primary text-primary btn-flat btn-icon btn-rounded btn-sm"><i class="icon-spinner11"></i></a></div>
                         <div class="media-body">
-                            <a href="#">{{$item->user->name}}</a>
+                            <a href="{{ route('wiki.baca', $item->id) }}">{{$item->user->name}}</a>
                             <div class="media-annotation">{{$item->getCreatedAtAttribute()}}</div>
                         </div>
                     </li>

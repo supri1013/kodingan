@@ -46,7 +46,6 @@ class DokumenController extends Controller
             
             'judul_umum' => 'required',
             'volume' => 'required',
-            'isu' => 'required',
             'halaman' => 'required',
             'abstrak' => 'required',
             'kata_kunci' => 'required',
@@ -99,7 +98,6 @@ class DokumenController extends Controller
             
             'judul_umum' => 'required',
             'volume' => 'required',
-            'isu' => 'required',
             'halaman' => 'required',
             'abstrak' => 'required',
             'kata_kunci' => 'required',
@@ -195,7 +193,6 @@ class DokumenController extends Controller
             
             'judul_umum' => 'required',
             'volume' => 'required',
-            'isu' => 'required',
             'halaman' => 'required',
             'abstrak' => 'required',
             'kata_kunci' => 'required',
@@ -268,7 +265,6 @@ class DokumenController extends Controller
            
            'judul_umum' => 'required',
            'volume' => 'required',
-           'isu' => 'required',
            'halaman' => 'required',
            'abstrak' => 'required',
            'kata_kunci' => 'required',

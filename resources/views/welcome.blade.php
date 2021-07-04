@@ -109,7 +109,7 @@
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
             <figure class="circle-bg">
-            <img src="landing/images/hero_1.jpg" alt="Image" class="img-fluid">
+            <img src="landing/images/cover_home.jpg" alt="Image" class="img-fluid">
             </figure>
           </div>
           <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
@@ -146,7 +146,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
+                <img src="landing/images/default.png" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Anton Wisnu Prabowo</h3>
@@ -164,7 +164,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
+                <img src="landing/images/default.png" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Tika Meirawati</h3>
@@ -182,7 +182,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
+                <img src="landing/images/default.png" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Sutrisno</h3>
@@ -200,7 +200,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
+                <img src="landing/images/default.png" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Verdian Anumza</h3>
@@ -218,7 +218,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
+                <img src="landing/images/default.png" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Indra Permana</h3>
@@ -236,7 +236,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
+                <img src="landing/images/default.png" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Dani Apriansyah</h3>
@@ -254,7 +254,7 @@
                   <li><a href="#"><span class="icon-linkedin"></span></a></li>
                   <li><a href="#"><span class="icon-instagram"></span></a></li>
                 </ul>
-                <img src="landing/images/a3.jpg" alt="Image" class="img-fluid">
+                <img src="landing/images/default.png" alt="Image" class="img-fluid">
               </figure>
               <div class="p-3">
                 <h3>Machel Alvaldo</h3>
@@ -304,15 +304,15 @@
 
             <form action="#" class="p-5 bg-white">
               
-              <h2 class="h4 text-black mb-5">Contact Form</h2> 
+              <h2 class="h4 text-black mb-5">Kontak</h2> 
 
               <div class="row form-group">
                 <div class="col-md-6 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">First Name</label>
+                  <label class="text-black" for="fname">Nama Depan</label>
                   <input type="text" id="fname" class="form-control">
                 </div>
                 <div class="col-md-6">
-                  <label class="text-black" for="lname">Last Name</label>
+                  <label class="text-black" for="lname">Nama Belakang</label>
                   <input type="text" id="lname" class="form-control">
                 </div>
               </div>
@@ -328,14 +328,14 @@
               <div class="row form-group">
                 
                 <div class="col-md-12">
-                  <label class="text-black" for="subject">Subject</label> 
+                  <label class="text-black" for="subject">Subjek</label> 
                   <input type="subject" id="subject" class="form-control">
                 </div>
               </div>
 
               <div class="row form-group">
                 <div class="col-md-12">
-                  <label class="text-black" for="message">Message</label> 
+                  <label class="text-black" for="message">Pesan</label> 
                   <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
                 </div>
               </div>
@@ -361,20 +361,18 @@
           <div class="col-md-9">
             <div class="row">
               <div class="col-md-5">
-                <h2 class="footer-heading mb-4">About Us</h2>
+                <h2 class="footer-heading mb-4">Tentang Kami</h2>
                 <p>PT Pelabuhan Indonesia II (selanjutnya disebut “IPC” dan “Perseroan”) pada awalnya didirikan sebagai Perusahaan Umum (“Perum”) Pelabuhan II berdasarkan Peraturan Pemerintah (“PP”) No. 15 Tahun 1983 juncto PP No. 5 Tahun 1985. Perum Pelabuhan II merupakan Badan Usaha Milik Negara (“BUMN”) yang berada di bawah pembinaan Departemen Perhubungan Republik Indonesia. </p>
               </div>
               <div class="col-md-3 ml-auto">
-                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <h2 class="footer-heading mb-4">Link</h2>
                 <ul class="list-unstyled">
-                  <li><a href="#about-section" class="smoothscroll">About Us</a></li>
-                  <li><a href="#services-section" class="smoothscroll">Services</a></li>
-                  <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
-                  <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                  <li><a href="#about-section" class="smoothscroll">Tentang Kami</a></li>
+                  <li><a href="#contact-section" class="smoothscroll">Kontak Kami</a></li>
                 </ul>
               </div>
               <div class="col-md-3">
-                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <h2 class="footer-heading mb-4">Ikuti</h2>
                 <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
                 <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
@@ -383,12 +381,12 @@
             </div>
           </div>
           <div class="col-md-3">
-            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+            <h2 class="footer-heading mb-4">Berlangganan Berita</h2>
             <form action="#" method="post" class="footer-subscribe">
               <div class="input-group mb-3">
                 <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
                 <div class="input-group-append">
-                  <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
+                  <button class="btn btn-primary text-black" type="button" id="button-addon2">Kirim</button>
                 </div>
               </div>
             </form>
