@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 use App\Newwiki;
 use App\Jenis;
+use DomDocument;
 use Illuminate\Http\UploadedFile; 
 class WikiController extends Controller
 {
